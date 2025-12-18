@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breaker Nano</title>
+  <!-- Open Graph pour un aperçu attractif sur les réseaux sociaux -->
+  <meta roperty="og:title" content="Breaker Nano — Jouez instantanément" />
+  <meta property="og:description" content="Contrôlez le paddle et brisez tous les blocs. La vitesse augmente à chaque niveau !" />
+  <!-- Image d'aperçu (ne pas utiliser de données base64) -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=600&q=60" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <div id="score-board">Score : <span id="score">0</span> — Niveau : <span id="level">1</span></div>
+    <canvas id="game-canvas" width="400" height="600"></canvas>
+    <!-- Overlay de démarrage -->
+    <div id="start-overlay" class="overlay">
+      <h2>Breaker Nano</h2>
+      <p>Déplacez le paddle pour renvoyer la balle et briser tous les blocs. Chaque niveau est plus rapide.</p>
+      <button id="start-button">Démarrer</button>
+    </div>
+    <!-- Overlay de fin de partie -->
+    <div id="end-overlay" class="overlay">
+      <h2>Partie terminée !</h2>
+      <p>Votre score : <span id="final-score"></span></p>
+      <button id="restart-button">Rejouer</button>
+      <button id="share-button">Partager mon score</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
